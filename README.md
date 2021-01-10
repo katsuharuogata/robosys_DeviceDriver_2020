@@ -1,4 +1,4 @@
-# robosys_DevieDriver_2020
+# robosys_DeviceDriver_2020
 ロボットシステム学の課題１で作成したLEDをコントロールするデバイスドライバです。
 ## 目次
 - 概要
@@ -34,8 +34,8 @@
 動作させるためにまずこのリポジトリをクローンしビルドします。  
 カーネルモジュールをインストールして、権限を変更します。
 ```
-$ git clone https://github.com/katsuharuogata/robosys_DevieDriver_2020.git
-$ cd robosys_DviceDriver_2020/myled
+$ git clone https://github.com/katsuharuogata/robosys_DeviceDriver_2020.git
+$ cd robosys_DeviceDriver_2020/myled
 $ make
 $ sudo insmod myled.ko
 $ sudo chmod 666 /dev/myled0
