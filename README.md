@@ -31,7 +31,8 @@
 
 ## 実行コマンド
 ### ビルド
-動作させるためにまずこのリポジトリをクローンしビルドします。
+動作させるためにまずこのリポジトリをクローンしビルドします。  
+カーネルモジュールをインストールして、権限を変更します。
 ```
 $ git clone https://github.com/katsuharuogata/robosys_DevieDriver_2020.git
 $ cd robosys_DviceDriver_2020/myled
@@ -45,6 +46,7 @@ $ sudo chmod 666 /dev/myled0
 2. GPIO23
 3. GPIO24
 4. GPIO25
+
 0を入力するとすべてのLEDが消灯します。
 ```
 $ echo 1 > /dev/myled0
@@ -56,6 +58,7 @@ tと入力すると16秒まで測れるタイマがスタートします。
 $ echo t > /dev/myled0
 ```
 ### 後始末
+カーネルモジュールをアンインストールします。
 ```
 $ sudo rmmod myled
 $ make clean
